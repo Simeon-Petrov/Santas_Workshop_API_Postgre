@@ -61,7 +61,7 @@ mvn clean install<br>
 mvn spring-boot:run<br>  
 
 #### Navigate to the project root (where `pom.xml` is located):
-cd [[[[https://github.com/Simeon-Petrov/Santas-Workshop-API](https://github.com/Simeon-Petrov/Santas_Workshop_API_Postgre/blob/main/pom.xml)]
+cd [[https://github.com/Simeon-Petrov/Santas-Workshop-API](https://github.com/Simeon-Petrov/Santas_Workshop_API_Postgre/blob/main/pom.xml)]
 
 ---
 
