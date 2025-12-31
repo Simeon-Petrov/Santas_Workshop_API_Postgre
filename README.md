@@ -50,3 +50,5 @@ spring.datasource.url=jdbc:postgresql://localhost:5432/santa_workshop
 spring.datasource.username=your_postgres_user
 spring.datasource.password=your_postgres_password
 spring.jpa.hibernate.ddl-auto=update
+
+---
