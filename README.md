@@ -54,8 +54,6 @@ spring.jpa.hibernate.ddl-auto=update
 
 ---
 
----
-
 ### 3. Build and Run
 
 cd path/to/exam-postgre<br> 
@@ -63,11 +61,25 @@ mvn clean install<br>
 mvn spring-boot:run<br>  
 
 #### Navigate to the project root (where `pom.xml` is located):
-cd [[[https://github.com/Simeon-Petrov/Santas-Workshop-API](https://github.com/Simeon-Petrov/Santas-Workshop-API/blob/master/pom.xml)]
+cd [[[[https://github.com/Simeon-Petrov/Santas-Workshop-API](https://github.com/Simeon-Petrov/Santas_Workshop_API_Postgre/blob/main/pom.xml)]
 
 ---
 
 ### 4. Access the Application
+
+Once the application starts (typically runs on port **8080**), open your browser or Postman and go to:
+
+[http://localhost:8080/api](http://localhost:8080/api)
+
+
+| Feature                          | Location          | Description                                                                                            |
+| -------------------------------- | ----------------- | ------------------------------------------------------------------------------------------------------ |
+| **Database Persistence**         | Repositories      | Uses `JpaRepository` for out-of-the-box CRUD and SQL support with PostgreSQL.                          |
+| **Transactional Status Updates** | `DeliveryService` | Uses `@Transactional` to ensure delivery and related gift status updates are applied atomically.       |
+| **Conflict Handling**            | `ElfService`      | Validates gift state before assignment and throws `IllegalStateException`, mapped to **409 Conflict**. |
+| **Modern Java Stack**            | Project-wide      | Built with **Java 21** and **Lombok** to reduce boilerplate (getters, setters, builders).              |
+| **Dynamic Filtering**            | `GiftService`     | Combines database queries with Java Streams for flexible filtering by status and category.             |
+
 
 ## API Documentation
 
