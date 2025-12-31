@@ -53,3 +53,30 @@ spring.jpa.hibernate.ddl-auto=update
 ```
 
 ---
+
+---
+
+### 3. Build and Run
+
+cd path/to/exam-postgre<br> 
+mvn clean install<br> 
+mvn spring-boot:run<br>  
+
+#### Navigate to the project root (where `pom.xml` is located):
+cd [[[https://github.com/Simeon-Petrov/Santas-Workshop-API](https://github.com/Simeon-Petrov/Santas-Workshop-API/blob/master/pom.xml)]
+
+---
+
+### 4. Access the Application
+
+## API Documentation
+
+You can find detailed API request examples and test scenarios in the following file:
+
+- [Test Requests (HTTP Client)](test_requests.http)
+
+---
+
+## Author
+
+**Simeon Petrov**
